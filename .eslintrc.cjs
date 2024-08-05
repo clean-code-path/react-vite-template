@@ -1,7 +1,16 @@
 module.exports = {
   root: true,
-  env: {browser: true, es2020: true},
-  extends: ['prettier', 'eslint:recommended', 'plugin:react-hooks/recommended', 'plugin:prettier/recommended', 'plugin:storybook/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:@tanstack/eslint-plugin-query/recommended', 'plugin:storybook/recommended'],
+  env: { browser: true, es2020: true },
+  extends: [
+    'prettier',
+    'eslint:recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:prettier/recommended',
+    'plugin:storybook/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@tanstack/eslint-plugin-query/recommended',
+    'plugin:storybook/recommended',
+  ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
   plugins: [
@@ -11,16 +20,13 @@ module.exports = {
     'unused-imports',
     'simple-import-sort',
     '@tanstack/query',
-    'react'
+    'react',
   ],
   rules: {
-    'react-refresh/only-export-components': [
-      'warn',
-      {allowConstantExport: true},
-    ],
+    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     '@typescript-eslint/consistent-type-imports': 'error',
     'prettier/prettier': 'error',
-    'react/jsx-curly-brace-presence': ['error', {props: 'never', children: 'never'}],
+    'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
     '@typescript-eslint/no-explicit-any': 'error',
@@ -44,4 +50,4 @@ module.exports = {
     'unused-imports/no-unused-vars': 'error',
     'react/react-in-jsx-scope': 'off',
   },
-}
+};
