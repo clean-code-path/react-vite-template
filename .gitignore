@@ -1,27 +1,37 @@
-# Logs
-logs
-*.log
+# yarn - zero-config
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# 환경 설정 파일
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 로그 파일
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# 빌드 결과물
+dist/
+build/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# 의존성 디렉토리
+node_modules/
+.pnp.cjs
+.pnp.loader.mjs
+
+# IDE 설정 파일
+.vscode/
+.idea/
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
 
-*storybook.log
+# eslint
 .eslintcache
