@@ -8,6 +8,7 @@ import { increment } from '../store/counterSlice.ts';
 function Main() {
   const counter = useSelector((state: CounterState) => state.counter.value);
   const dispatch = useDispatch();
+
   return (
     <>
       <S.Container>

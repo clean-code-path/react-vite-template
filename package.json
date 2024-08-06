@@ -54,6 +54,7 @@
     "eslint-plugin-unused-imports": "^4.0.1",
     "husky": "^9.1.4",
     "lint-staged": "^15.2.8",
+    "msw": "^2.3.5",
     "pretty-quick": "^4.0.0",
     "storybook": "^8.2.7",
     "ts-pattern": "^5.2.0",
@@ -63,5 +64,10 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "yarn lint:fix"
   },
-  "packageManager": "yarn@4.4.0"
+  "packageManager": "yarn@4.4.0",
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  }
 }
